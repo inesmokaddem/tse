@@ -6,7 +6,7 @@ type ButtonVersion = "normal" | "success"
 
 type ButtonProps = {
   label: string, 
-  Icon: React.ReactNode, 
+  Icon?: React.ReactNode, 
   version?: ButtonVersion, 
 } & ComponentProps<"button">
 
