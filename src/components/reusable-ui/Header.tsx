@@ -1,12 +1,10 @@
-import React from "react"
 import styled from "styled-components"
-import { theme } from "../../theme"
+import { theme } from "@/theme/theme"
+import { PropsWithChildren } from "react"
 
-type HeaderProps = {
-  children: React.ReactNode
-}
 
-export default function Header({ children }: HeaderProps) {
+
+export default function Header({ children }: PropsWithChildren) {
   return <HeaderStyled>{children}</HeaderStyled>
 }
 
