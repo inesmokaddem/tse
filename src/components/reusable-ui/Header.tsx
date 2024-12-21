@@ -1,10 +1,12 @@
-import React from "react"
 import styled from "styled-components"
-import { theme } from "../../theme"
+import { theme } from "@/theme/theme"
+import { PropsWithChildren } from "react"
 
-export default function Header({ children }) {
+export default function Header({ children }: PropsWithChildren ) {
   return <HeaderStyled>{children}</HeaderStyled>
 }
+
+
 
 const HeaderStyled = styled.div`
   height: 70px;
